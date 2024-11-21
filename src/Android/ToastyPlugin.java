@@ -12,7 +12,7 @@ public class ToastyPlugin extends CordovaPlugin {
   private static final String DURATION_LONG = "long";
   @Override
   public boolean execute(String action, JSONArray args,
-    final CallbackContext callbackContext) {
+    CallbackContext callbackContext) {
       // Verify that the user sent a 'show' action
       if (!action.equals("show")) {
         callbackContext.error("\"" + action + "\" is not a recognized action.");
